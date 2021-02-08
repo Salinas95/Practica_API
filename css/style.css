@@ -11,7 +11,7 @@ body{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px repeat(6, 5em) 80px;
+    grid-template-rows: 100px 3.3em repeat(5, 5em) 80px;
     grid-template-areas: 
                         "cabecera"
                         "menu"
@@ -26,6 +26,11 @@ body{
 @font-face{
     font-family: "header";
     src: url(../fonts/KornerDeliNF.ttf);
+}
+
+@font-face{
+    font-family: "cafe";
+    src: url(../fonts/CafeFrancoise.otf);
 }
 /************************** GENERAL **************************/
 
@@ -43,7 +48,7 @@ body{
         justify-content: center;
         align-items: center;
         /* border-top: 3px solid #3F5155; */
-        border-bottom: 3px solid #3F5155;
+        border-bottom: 1px solid #3F5155;
         margin-top: -0.47em;
     }
 
@@ -61,10 +66,40 @@ body{
     }
 /************************** HEADER **************************/
 
-.menu{
-    grid-area:menu;
-    border: 1px solid yellowgreen;
-}
+
+
+/*************************** MENÚ ***************************/
+    .menu{
+        grid-area:menu;
+        border-top: 3px solid #3F5155;
+        border-bottom: 3px solid #3F5155;
+        display: flex;
+        justify-content: center;
+        background-color: #AFC5D2;
+    }
+
+    .menu__list{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-left: -2.8em;
+    }
+
+    .menu__link{
+        text-decoration: none;
+        padding: 0.6em;
+        font-weight: bolder;
+        font-size: 1.07em;
+        font-family: "cafe";
+        color: #390010;
+    }
+
+    .menu__link:hover {
+        background-color: #72828F;
+    }
+/*************************** MENÚ ***************************/
+
+
 
 .inicio{
     grid-area:inicio;
