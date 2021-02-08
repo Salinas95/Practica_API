@@ -1,0 +1,63 @@
+
+/* GENERAL */
+.container{
+    width: 98%;
+    max-width: 900px;
+    height: 55em;
+    margin: 0 auto;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+                        "cabecera"
+                        "menu"
+                        "inicio"
+                        "contenido1"
+                        "contenido2"
+                        "contenido3"
+                        "contenido4"
+                        "pie";
+}
+
+/* GRID TEMPLATE AREAS */
+.cabecera{
+    grid-area:cabecera;
+    border: 1px solid red;
+}
+
+.menu{
+    grid-area:menu;
+    border: 1px solid yellowgreen;
+}
+
+.inicio{
+    grid-area:inicio;
+    border: 1px solid brown;
+}
+
+.contenido1{
+    grid-area:contenido1;
+    border: 1px solid red;
+}
+
+.contenido2{
+    grid-area:contenido2;
+    border: 1px solid yellowgreen;
+}
+
+.contenido3{
+    grid-area:contenido3;
+    border: 1px solid brown;
+}
+
+.contenido4{
+    grid-area:contenido4;
+    border: 1px solid red;
+}
+
+.pie{
+    grid-area:pie;
+    border: 1px solid blue;
+}
