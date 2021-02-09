@@ -1,0 +1,23 @@
+
+/************************** GENERAL **************************/
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 3.3em 17em 80px;
+    grid-template-areas: 
+                        "cabecera"
+                        "menu"
+                        "inicio"
+                        "pie";
+}
+/************************** GENERAL **************************/
+
+.btn{
+    background-color: #3F5155;;
+    border-bottom: 4px solid #390010;
+    color: #390010;
+    border-radius: 4px;
+    font-size: 2.4em;
+    font-family: "header";
+    padding: 0.2em;
+}
