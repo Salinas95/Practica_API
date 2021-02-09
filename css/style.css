@@ -12,7 +12,7 @@ body{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 3.3em 17em 1fr 18em repeat(2, 5em) 80px;
+    grid-template-rows: 100px 3.3em 17em 1fr 18em 10em 1fr 80px;
     grid-template-areas: 
                         "cabecera"
                         "menu"
@@ -147,12 +147,7 @@ p{
 /************************ CONTENIDO 1 ***********************/
     .contenido1{
         grid-area:contenido1;
-        border: 1px solid red;
         display: flex;
-    }
-
-    .contenido1__article{
-        display:flex;
         flex-direction: column;
         align-items: center;
     }
@@ -209,10 +204,37 @@ iframe{
 }
 /************************ CONTENIDO 3 ***********************/
 
-.contenido4{
-    grid-area:contenido4;
-    border: 1px solid red;
-}
+
+
+/************************ CONTENIDO 4 ***********************/
+    .contenido4{
+        grid-area:contenido4;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-top: 3px solid #3F5155;
+    }
+
+    .galeria{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        flex-wrap:wrap;	
+    }
+    /* .article__contenido4{
+        border: 4px solid #3F5155;
+        width: 46.9%;
+        margin: 0.2em;
+    } */
+
+    .contenido4__img{
+        width: 46.9%;
+        /* max-width: 100%; */
+        margin-bottom: -0.24em;
+        border: 4px solid #3F5155;
+        border-radius: 3px;
+        margin: 0.2em;
+    }
+/************************ CONTENIDO 4 ***********************/
 
 
 /************************** FOOTER **************************/
