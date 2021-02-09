@@ -7,16 +7,10 @@ const img=document.getElementById("img");
 
 
 const mostrarPixabay=(imagenes)=>{
-    for(imagen of imagenes.hits){
-        //console.log("hola");
-        console.log(imagen);
-
-        /* const hola=document.createElement("div");
-        hola.className+="article__contenido4"; */
-
+    for(image of imagenes.hits){
         const img=document.createElement("img");
         img.className+="contenido4__img";
-        img.src=imagen.webformatURL;
+        img.src=image.webformatURL;
         galeria.append(img);
     } 
 }
